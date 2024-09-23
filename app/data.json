@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "HOP",
+        "Agility": 100,
+        "Strength": 80,
+        "Health": 20
+    },
+    {
+        "Name": "PAP",
+        "Agility": 70,
+        "Strength": 70,
+        "Health": 50
+    },
+    {
+        "Name": "AHHHLALALA",
+        "Agility": 50,
+        "Strength": 30,
+        "Health": 20
+    },
+    {
+        "Name": "Hip",
+        "Agility": 80,
+        "Strength": 70,
+        "Health": 20
+    },
+    {
+        "Name": "KIRIKIKI",
+        "Agility": 10,
+        "Strength": 90,
+        "Health": 50
+    }
+]
