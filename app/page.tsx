@@ -1,10 +1,10 @@
-"use client";
 import axios from 'axios';
 import Card, {Card_Data} from './card';
 import styles from './styles/style.module.css'
 import React from 'react';
+
 async function getData() {
-  const data_db = await axios.get('http://localhost:8000/app/api.php');
+  const data_db = await axios.get('http://localhost:8000/api/api.php');
   return data_db.data;
 }
 async function Main(){
