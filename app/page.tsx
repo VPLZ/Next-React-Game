@@ -1,7 +1,8 @@
 import axios from 'axios';
-import Card, {Card_Data} from './card';
+import Card, {Card_Data} from './Component/card';
 import styles from './styles/style.module.css'
-import React from 'react';
+import React, { useState } from 'react';
+import CardForm from './Component/cardForm';
 
 async function getData() {
   const data_db = await axios.get('http://localhost:8000/api/api.php');
@@ -9,7 +10,6 @@ async function getData() {
 }
 async function Main(){
   const data = await getData();
-  console.log(data);
   return (
   <>
     <header className={styles.title}>Stratagem : Card Strategy Game</header>
@@ -18,6 +18,8 @@ async function Main(){
         <Card key={key} card_data={cardData} />
       ))}
     </div>
+    <CardForm />
+    <button>Ajouter une carte</button>
   </>);
 }
 export default function Home() {

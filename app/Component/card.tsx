@@ -1,6 +1,6 @@
 "use client";
-import styles from './styles/style.module.css';
-import './global.scss';
+import styles from '../styles/style.module.css';
+import '../styles/style.module.css';
 
 
 interface StateProps{
