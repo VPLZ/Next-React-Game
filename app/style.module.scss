@@ -1,0 +1,29 @@
+.card_container{
+  background-color: rgba(26,26,58,255);
+  box-shadow: 0px 0px 20px rgba(9,85,145,255);
+  width: 15%;
+  height:fit-content;
+  padding: 30px 20px 40px 20px;
+  border-radius: 10px;
+  font-size: x-large;
+  color: lime;
+  .name{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: larger;
+    font-weight: bold;
+    text-shadow:
+      0 0 10px #ff00ff,
+      0 0 15px #ff00ff;
+      
+    color : #ff00ff;
+  }
+}
+.title{
+  @apply flex justify-center items-center h-14 text-3xl mb-5;
+  color: rgb(171, 171, 255);
+  text-shadow:
+    0 0 5px rgb(171, 171, 255),
+    0 0 10px rgb(171, 171, 255);
+}

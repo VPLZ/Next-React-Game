@@ -1,4 +1,8 @@
 "use client";
+import styles from './styles/style.module.css';
+import './global.scss';
+
+
 interface StateProps{
   stat_name: string
   stat_value: string | number
@@ -14,8 +18,8 @@ export interface Card_Data{
 }
 export default function Card({card_data}: CardState){
   return (
-    <div>
-      <h1>{card_data.Name}</h1>
+    <div className={styles.card_container}>
+      <h1 className={styles.name}>{card_data.Name}</h1>
       <Stat stat_name="Agility" stat_value={card_data.Agility} />
       <Stat stat_name="Strength" stat_value={card_data.Strength} />
       <Stat stat_name="Health" stat_value={card_data.Health} />
@@ -25,9 +29,9 @@ export default function Card({card_data}: CardState){
 
 function Stat({stat_name, stat_value}: StateProps){
   return(
-    <div className="flex ">
-      <p>{stat_name}</p>
-      <p>: {stat_value}</p>
+    <div className="flex justify-between">
+      <p>{stat_name}:</p>
+      <p className='text-blue-400'>{stat_value}</p>
     </div>
   )
 }
