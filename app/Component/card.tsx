@@ -16,6 +16,7 @@ export interface Card_Data{
   Health: number
   Name: string
 }
+
 export default function Card({card_data}: CardState){
   return (
     <div className={styles.card_container}>
